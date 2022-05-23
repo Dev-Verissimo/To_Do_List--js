@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>
+            To do list
+            (<span id="quantidade"></span>)
+        </h1>
+        <div class="input container">
+            <input id="inputAddTask" type="text" name="" placeholder="Add new to-do">
+            <button class="add-button">Add</button>
+        </div>
+
+        <ul id="tasks">
+            <li >
+                <div onclick="excluiLi(this)" class="btn-delete">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </div>
+                <div onclick="finalizarTask(this)">Adicionei uma tarefa</div>
+            </li>
+            <li>
+                <div onclick="excluiLi(this)" class="btn-delete">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </div>
+                <div onclick="finalizarTask(this)">Passe o mouse</div>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="src/js/script.js"></script>
+
+</body>
+</html>
